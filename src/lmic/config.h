@@ -5,7 +5,8 @@
 // gcc commandline. Since Arduino does not allow easily modifying the
 // compiler commandline, use this file instead.
 
-#define CFG_eu868 1
+#define CFG_eu433 1
+//#define CFG_eu868 1
 //#define CFG_us915 1
 // This is the SX1272/SX1273 radio, which is also used on the HopeRF
 // RFM92 boards.
@@ -40,10 +41,10 @@
 // Uncomment this to disable all code related to joining
 //#define DISABLE_JOIN
 // Uncomment this to disable all code related to ping
-//#define DISABLE_PING
+#define DISABLE_PING
 // Uncomment this to disable all code related to beacon tracking.
 // Requires ping to be disabled too
-//#define DISABLE_BEACONS
+#define DISABLE_BEACONS
 
 // Uncomment these to disable the corresponding MAC commands.
 // Class A
